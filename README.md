@@ -1,4 +1,4 @@
 quiz
 ====
 
-A quiz game test prject.
+A quiz game test project.
