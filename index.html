@@ -1,54 +1,44 @@
-<!DOCTYPE html> 
+<!DOCTYPE HTML>
 <html>
 <head>
+<title>Quiz Game</title>
 <meta charset="utf-8">
-<title>jQuery Mobile Web App</title>
-<link href="http://code.jquery.com/mobile/1.0/jquery.mobile-1.0.min.css" rel="stylesheet" type="text/css"/>
-<script src="http://code.jquery.com/jquery-1.6.4.min.js" type="text/javascript"></script>
-<script src="http://code.jquery.com/mobile/1.0/jquery.mobile-1.0.min.js" type="text/javascript"></script>
-</head> 
+<!-- hosted by google
+		https://developers.google.com/speed/libraries/devguide
+        -->
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+<script src="http://ajax.googleapis.com/ajax/libs/jquerymobile/1.4.2/jquery.mobile.min.js"></script>
+<link rel="stylesheet" href="http://ajax.googleapis.com/ajax/libs/jquerymobile/1.4.2/jquery.mobile.min.css" />
+<link rel="stylesheet" href="app_novo.css" />
+</head>
+
 <body> 
 
-<div data-role="page" id="page">
-	<div data-role="header">
-		<h1>Nome do app aqui</h1>
-	</div>
-	<div data-role="content">	
-		<ul data-role="listview">
-			<li><a href="#page2">Galeria 1</a></li>
-            <li><a href="#page3">Galeria 2</a></li>
-			<li><a href="#page4">Galeria 3</a></li>
-		</ul>		
-	</div>
-	
+<!--ENTRADA-->
+<div id="splash" data-role="page" data-theme="b">
+    <div align="center" data-role="content">	
+	    <h1>QUIZ GAME</h1>
+	    <a href="#page1" data-role="button" data-icon="star" data-iconpos="top">GAME START</a>
+    	</div>
 </div>
 
-<div data-role="page" id="page2">
-	<div data-role="header">
-		<h1>Galeria 1</h1>
-	</div>
+<!--PERGUNTA 1-->
+<div align="center" data-role="page" id="page1" data-theme="b">
 	<div data-role="content">	
-		Conteúdo da galeria 1 aqui.		
-	</div>
-	</div>
+	<h1>Artista que colocou bigodes na Monalisa.</h1>
+    <br/><br/><br/><br/><br/>
+  	<div data-role="controlgroup">
+    <a href="#" data-role="button">Leonardo da Vinci</a>
+    <a href="#" data-role="button">Marcel Duchamp</a>
+    <a href="#" data-role="button">Jackson Pollock</a>
+    </div>
+    </div>
 
-<div data-role="page" id="page3">
-	<div data-role="header">
-		<h1>Galeria 2</h1>
-	</div>
-	<div data-role="content">	
-		Conteúdo da galeria 2 aqui.		
+	<div data-role="footer">
+		<h4><a href="#splash">Voltar para tela inicial</a></h4>
 	</div>
 </div>
 
-<div data-role="page" id="page4">
-	<div data-role="header">
-		<h1>Galeria 3</h1>
-	</div>
-	<div data-role="content">	
-		Conteúdo da galeria 3 aqui.
-	</div>
-</div>
 
 </body>
 </html>
